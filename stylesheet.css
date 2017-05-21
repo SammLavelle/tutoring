@@ -1,0 +1,279 @@
+
+body{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto Slab", sans-serif;
+	color: #323232;
+	text-align: center;
+	background-image: url(img/background.svg);
+    background-repeat: repeat;
+    background-size: 500px 500px;
+    background-color: #fff;
+}
+
+hr{
+	width: 100vw;
+	border: none;
+    height: 1px;
+    background-color: gainsboro;
+    margin: 50px 0;
+}
+
+/*nav bar*/
+ul{
+	margin: 0;
+	float: right;
+}
+li{
+	display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 20px 40px 20px 0;
+}
+li:hover{
+	color: #0084ec;
+	cursor: pointer;
+}
+
+.glyphicon-education{
+	transform: rotate(-35deg);
+		-webkit-transform: rotate(-35deg);
+		-moz-transform: rotate(-35deg);
+		-o-transform: rotate(-35deg);
+	top: 40px;
+    left: 104px;
+    font-size: 50px;
+    color: #0084ec;
+}
+h1{
+	font-size: 38px;
+	font-weight: normal;
+	clear: both;
+	text-align: center;
+}
+
+/*main body*/
+.inner-box-width{
+	width: 90%;
+	max-width: 768px;
+	margin: auto;
+}
+p{
+	line-height: 1.4em;
+	font-weight: 300;
+	padding: 0 10px;
+	margin: 0;
+}
+
+/*blurb*/
+#about{
+	padding-top: 10px;
+}
+img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/*services*/
+.services-wrapper{
+	width: 100%;
+	overflow: hidden;
+}
+.services-descriptions{
+	width: 33.3%;
+	height: 150px;
+	float: left;
+	box-sizing: border-box;
+	padding: 0 0 40px 0;
+}
+h2{
+	font-size: 24px;
+	letter-spacing: 0.5px;
+	margin: 0 0 34px 0;
+}
+h3{
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+	margin: 0 0 10px 0;
+	padding: 0px 20%;
+}
+#services img{
+	width: 50px;
+}
+#services .clear-div{
+	width: 100%;
+	clear: both;
+}
+#services .summary{
+	width: 100%;
+}
+
+/*quotes*/
+quote{
+	background-repeat: no-repeat;
+	font-size: 20px;
+	font-style: italic;
+	position: relative;
+	display: block;
+	padding: 0 80px;
+}
+	quote:before{
+		content:'\201C';
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		left: 40px;
+    	top: -45px;
+	    font-size: 90px;
+	    font-family: arial;
+	    color: #0084ec;
+	}
+	quote:after{
+		content: attr(data-author);
+	    display: block;
+	    font-style: normal;
+	    color: rgba(150, 150, 150, 0.71);
+	    position: absolute;
+	    right: 30px;
+	    font-size: 16px;
+	}
+.quote{
+	display: none;
+}
+.quote:first-child{
+	display: block;
+}
+
+
+#availability{
+	overflow: hidden;
+}
+/*calendar*/
+.calendar-container{
+	width: 50%;
+	padding-right: 20px;
+	float: left;
+}
+div.zabuto_calendar .table tr td.event div.day, div.zabuto_calendar ul.legend li.event {
+    background-color: #0084ec;
+    color: white;
+}
+/*contact form*/
+.contact-form{
+	width: 50%;
+	padding-left: 20px;
+	float: left;
+}
+
+.contact-form.submitted {
+	display: none;
+}
+
+.contact-form-thanks {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	text-align: center;
+
+}
+.contact-form-thanks.submitted {
+	height: 25vw;
+	opacity: 1;
+		transition: opacity 0.3s ease;
+		-webkit-transition: opacity 0.3s ease;
+		-moz-transition: opacity 0.3s ease;
+		-o-transition: opacity 0.3s ease;
+} 
+
+input, textarea, button{
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 12px;
+	color: #A7A7A7;
+	border: solid 1px gainsboro;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 2px;
+}
+
+input, textarea{
+	border-radius: 3px;
+	width: 100%;
+}
+	input:focus, textarea:focus{
+		outline: none;
+	}
+/*placeholder styling */
+	::-webkit-input-placeholder {
+	  color: #A7A7A7;
+	}
+	::-moz-placeholder {
+	  color: #A7A7A7;
+	}
+	:-ms-input-placeholder {
+	  color: #A7A7A7;
+	}
+	:-moz-placeholder {
+	  color: #A7A7A7;
+	}
+
+button{
+	background-color: #0084ec;
+	box-shadow: 3px 3px 2px 0px rgba(216, 209, 203, 0.5);
+	border-radius: 6px;
+	border-top: none;
+	border-bottom: solid #a7a7a7 2px;
+    width: 100%;
+    color: white;
+}
+	button:focus{
+		outline: none;
+		box-shadow: 1px 1px 0px 0px rgb(216, 209, 203), 0.5;
+		border-bottom: solid #a7a7a7 1px;
+	}
+	button:hover{
+		cursor:pointer;
+	}
+
+#calendar{
+	width: 50%;
+	float: left;
+}
+.glyphicon{
+	color: #0084ec;;
+}
+
+/*footer*/
+.footer-hr{
+	margin: 50px 0 0 0;
+}
+
+/*tablet*/
+	@media(max-width: 768px){
+		ul{ 
+			float: none;
+		}
+		li{
+			padding: 20px 40px 0 0;
+		}
+		.glyphicon-education{
+		    top: 40px;
+	    	left: -136px;
+    	}
+    	.services-descriptions{
+			width: 50%;
+			height: 150px;
+		}
+		.calendar-container, .contact-form{
+			width: 80%;
+			float: none;
+			margin: auto;
+			padding: 0;
+		}
+		.calendar-container{
+			margin-bottom: 40px;
+		}
+		
+
+}
