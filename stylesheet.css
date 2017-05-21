@@ -179,7 +179,7 @@ div.zabuto_calendar .table tr td.event div.day, div.zabuto_calendar ul.legend li
 
 }
 .contact-form-thanks.submitted {
-	height: 25vw;
+	height: 100px;
 	opacity: 1;
 		transition: opacity 0.3s ease;
 		-webkit-transition: opacity 0.3s ease;
